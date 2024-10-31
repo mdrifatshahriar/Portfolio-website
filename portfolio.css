@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #fff;
+    background: #121212;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    background: #1f1f1f;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar h1 {
+    font-size: 1.5em;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+.navbar ul li a {
+    color: #50e3c2;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #1f9b84;
+}
+
+.hero-section {
+    height: 90vh;
+    background: linear-gradient(135deg, #3a6073, #3a7bd5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.profile-pic-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    border: 4px solid #50e3c2;
+    
+}
+
+@keyframes rotateBorder {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin-top: 1em;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+
+button {
+    margin-top: 1em;
+    padding: 0.8em 2em;
+    font-size: 1em;
+    color: #333;
+    background-color: #50e3c2;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #3a6073;
+}
+
+.section {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.about p {
+    max-width: 600px;
+    margin: auto;
+    color: #ddd;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.skill {
+    background: #1f1f1f;
+    border-radius: 8px;
+    padding: 1em;
+    width: 120px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.skill i {
+    font-size: 2em;
+    color: #50e3c2;
+}
+
+.skill span {
+    display: block;
+    margin-top: 0.5em;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+.project-timeline {
+    display: grid;
+    gap: 2em;
+    max-width: 800px;
+    margin: auto;
+    color: #ddd;
+}
+
+.project-item {
+    background: #1f1f1f;
+    padding: 1.5em;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.project-item:hover {
+    background: #333;
+}
+
+.contact p {
+    font-size: 1.2em;
+}
+
+.footer {
+    padding: 1.5em;
+    background: #1f1f1f;
+    text-align: center;
+}
